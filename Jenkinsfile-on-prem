@@ -10,13 +10,14 @@ pipeline {
     }
 
     environment {
-        HARBOR_CREDENTIAL_ID = 'harbor-id'
-        GITLAB_CREDENTIAL_ID = 'gitlab-id'
+        DOCKER_CREDENTIAL_ID = 'dockerhub-id'
+        GITHUB_CREDENTIAL_ID = 'github-id'
         KUBECONFIG_CREDENTIAL_ID = 'demo-kubeconfig'
-        REGISTRY = 'harbor.devops.kubesphere.local:30280'
-        HARBOR_NAMESPACE = 'library'
-        GITLAB_ACCOUNT = 'admin1'
+        REGISTRY = 'docker.io'
+        DOCKERHUB_NAMESPACE = 'oyreborn'
+        GITHUB_ACCOUNT = 'oyreborn'
         APP_NAME = 'devops-java-sample'
+        SONAR_CREDENTIAL_ID = 'sonar-token'
     }
 
     stages {
